@@ -213,11 +213,20 @@
         function showSidebar() {
             let sidebar = document.querySelector('.sidebar');
             sidebar.style.display = 'flex';
+            const mediaQuery = window.matchMedia('(max-width: 400px)');
+            const body = document.querySelector('body');
+            if (mediaQuery.matches){
+                body.style.overflowY = "hidden";
+            } else {
+                body.style.overflowY = "visible";
+            }
         }
         function closeSidebar() {
             let sidebar = document.querySelector('.sidebar');
             sidebar.style.display = 'none';
             menuButton.style.display = 'block';
+            const body = document.querySelector('body');
+            body.style.overflowY = "visible";
         }
         const menuButton = document.querySelector('.menu-button');
         menuButton.addEventListener('click', () => {
