@@ -188,7 +188,7 @@ a {
   grid-column: 50vw 50vw;
   height: 100vh;
   min-height: 400px;
-  /* width: 100vw; */
+  width: 100vw;
   display: flex;
   color: white;
   background-color: black;
@@ -207,7 +207,7 @@ a {
 .third-page #model-3d {
   align-items: center;
   height: 100vh;
-  /* width: 200%; */
+  width: 200%; */
   width: 100%;
   display: flex;
   padding-left: 150px;
@@ -375,6 +375,7 @@ a {
   /* width: 100vw; */
   width: 100%;
   height: 100vh;
+  margin-top: 200px;
 }
 .fifth-page h3 {
   margin-bottom: 70px;
@@ -570,11 +571,11 @@ input[type="submit"]:hover {
     margin-left: 5vw;
   }
   .third-page #model-3d {
-    /* width: 300%; */
-    width: 100%;
+    width: 300%; 
+    
   }
   .image-wrapper > * {
-    aspect-ratio: 2 / 3;
+    aspect-ratio: 3 / 3;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -596,8 +597,8 @@ input[type="submit"]:hover {
     padding-left: 50px;
     width: 100%;
   }
-  .image-wrapper > * {
-    aspect-ratio: 2 / 3;
+  .third-page .description{
+    width: 70%;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -631,10 +632,13 @@ input[type="submit"]:hover {
   }
   .third-page #model-3d {
     height: 80vh;
-    /* width: 300%; */
     width: 100%;
     padding-left: 30px;
     transform: scale(0.8);
+  }
+  .third-page .description{
+    width: 70%
+    padding-left: 300px
   }
   .fourth-page h3 {
     font-size: 50px;
@@ -799,6 +803,11 @@ input[type="submit"]:hover {
     background-color: black;
     padding-left: 60px;
     padding-right: 0;
+    margin-bottom: 200px;
+  }
+  .third-page .description {
+    padding-left: 20px;
+    width: 40vw;
   }
   .third-page h3 {
     font-size: 40px;
@@ -807,11 +816,10 @@ input[type="submit"]:hover {
     font-size: 20px;
   }
   .third-page #model-3d {
-    align-items: center;
     height: 100vh;
     /* width: 300%; */
-    width: 100%;
-    /* transform: scale(0.5); */
+    width: 50vw;
+    transform: scale(0.7);
     display: flex;
     padding-left: 0;
     z-index: 5;
@@ -820,7 +828,7 @@ input[type="submit"]:hover {
     font-size: 40px;
   }
   .skills-area {
-    padding: 0 20%;
+    padding: 0 15%;
   }
   .fifth-page h3 {
     font-size: 40px;
@@ -871,7 +879,7 @@ input[type="submit"]:hover {
     margin-top: 15px;
   }
   .social {
-    padding-bottom: 0;
+    padding-bottom: 10vh;
   }
   .social img {
     width: 40px;
@@ -960,6 +968,21 @@ input[type="submit"]:hover {
     width: 100%;
     margin-left: 0;
   }
+  .third-page {
+    grid-column: 50vw 50vw;
+    padding-left: 20px;
+    height: 60vh;
+  }
+  .sixth-page p {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .contact-fr {
+    width: 60vw;
+  }
+  .social {
+    padding-bottom: 30px;
+  }
 }
 @media only screen and (max-width: 599px) {
   #text-name {
@@ -1014,8 +1037,14 @@ input[type="submit"]:hover {
     padding-top: 20vh;
     margin-bottom: 20%;
     text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+  }
+  .third-page .description {
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 80vw;
   }
   .third-page h3 {
     font-size: 46px;
@@ -1025,7 +1054,7 @@ input[type="submit"]:hover {
     font-size: 23px;
   }
   .third-page #model-3d {
-    transform: scale(1);
+    transform: scale(0.9);
     align-items: center;
     height: 50vh;
     /* width: 100vw; */
@@ -1052,6 +1081,9 @@ input[type="submit"]:hover {
   }
   .fifth-page h3 {
     font-size: 46px;
+  }
+  .sixth-page h3 {
+    padding-top: 10vh;
   }
   .sixth-page h3 {
     font-size: 46px;
@@ -1107,7 +1139,7 @@ input[type="submit"]:hover {
     /* width: 100vw; */
     height: 100vh;
     padding-top: 20vh;
-    margin-bottom: 20%;
+    margin-bottom: 0;
     text-align: center;
     /* padding-left: 80px;
     padding-right: 80px; */
@@ -1129,6 +1161,7 @@ input[type="submit"]:hover {
     display: flex;
     padding-left: 0;
     z-index: 5;
+    margin-top: 0;
   }
   .fourth-page h3 {
     font-size: 46px;
@@ -1174,8 +1207,8 @@ input[type="submit"]:hover {
     font-size: 23px;
     padding: 30px;
   }
-  .social {
-    padding-bottom: 0;
+  .contact-fr {
+    width: 70vw;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -1262,11 +1295,17 @@ input[type="submit"]:hover {
     padding-top: 35px;
     width: 100%;
   }
+  .fourth-page {
+    height: 170vh;
+  }
   .fourth-page h3 {
     font-size: 50px;
     margin-top: 40px;
   }
   #skillset {
+    margin-top: 0;
+  }
+  .fifth-page {
     margin-top: 0;
   }
   .fifth-page h3 {
@@ -1379,6 +1418,7 @@ input[type="submit"]:hover {
   .fourth-page h3 {
     font-size: 100px;
     padding-bottom: 50px;
+    margin-top: 30vh;
   }
   .fourth-page #expertise {
     grid-row-gap: 270px;
@@ -1419,8 +1459,6 @@ input[type="submit"]:hover {
   .contact-boxes {
     max-width: fit-content;
   }
-  .contact-fr {
-  }
   input[type="text"] {
     width: 500px;
     height: 80px;
@@ -1458,6 +1496,9 @@ input[type="submit"]:hover {
   .sidebar {
     width: 100%;
     height: 100%;
+  }
+  .fourth-page {
+    height: 170vh;
   }
 }
 
