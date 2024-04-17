@@ -517,6 +517,7 @@ input[type="email"]::placeholder {
 }
 input[type="submit"] {
   color: rgb(203, 1, 203);
+  background-color: white;
   height: 50px;
   width: 130px;
   font-size: 22px;
