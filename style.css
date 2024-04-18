@@ -1223,16 +1223,22 @@ input[type="submit"]:hover {
     height: 100vh;
   }
   .text-box {
-    color: cyan;
-    mix-blend-mode: normal;
-    position: static;
+    /*color: cyan; */
+    mix-blend-mode: multiply;
+    position: absolute;
     text-align: center;
     /* min-width: 100vw; */
     width: inherit;
     margin: 0 auto;
     font-size: 37px;
     line-height: 2em;
-    padding-top: 17vh;
+    padding-top: 80px;
+    overflow: hidden;
+  }
+  .first-page video {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+    max-height: 90vh;
   }
   .text-box span {
     font-size: 32px;
@@ -1246,9 +1252,9 @@ input[type="submit"]:hover {
     text-align: center;
     margin-top: 10vh;
   }
-  .first-page video {
+  /*.first-page video {
     display: none;
-  }
+  } */
   .second-page {
     /* width: inherit; */
     width: 100%;
