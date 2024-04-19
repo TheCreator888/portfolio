@@ -1370,9 +1370,7 @@ input[type="submit"]:hover {
     border-radius: 5px;
     margin-top: 12px;
   }
-  #text-name {
-    margin-right: 2px;
-  }
+  
   #text-subject {
     margin-left: 2px;
   }
