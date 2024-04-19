@@ -155,7 +155,7 @@
             </div>
         </form>
         <div class="social">
-          <a href="https://t.me/+49160626888">
+          <a href="https://t.me/+4915123181382">
               <img src="Icons/Social/2609571_chat_media_social_telegram_icon.png"/>
           </a>
           <a href="mailto: denisgorbatov7@proton.me">
@@ -178,8 +178,8 @@
     <script>
         function sendEmail() {
             Email.send({
-                SecureToken: "21876a51-e6a9-47fe-b210-4f46ca834600",
-                To : "denisgorbatov7@proton.me",
+                SecureToken: "b2acc307-0c45-4068-be55-700a124036b5",
+                To : "denisgorbatov7@mail.ru",
                 From : document.getElementById("email").value,
                 Subject : "New Contact Inquiry",
                 Body : "Name: " + document.getElementById("text-name").value
@@ -264,7 +264,7 @@
       }
 
       let autoScroll = setInterval(scrolling, delay);
-
+      
       function scrolling() {
         totalScroll++;
         if (totalScroll == imageLength + 1) {
@@ -273,12 +273,13 @@
           imageWrapper.style.transition = "0s";
           imageWrapper.style.left = "0";
           autoScroll = setInterval(scrolling, delay);
-        }
-        const widthEl =
-          document.querySelector(".image-wrapper > :first-child").offsetWidth + 24;
+
+        } 
+        const widthEl = document.querySelector(".image-wrapper > :first-child").offsetWidth + 24;
         imageWrapper.style.left = `-${totalScroll * widthEl}px`;
         imageWrapper.style.transition = "2s";
       }
     </script>
   </body>
 </html>
+
