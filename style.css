@@ -11,6 +11,7 @@
 html {
   /* min-width: fit-content; */
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   cursor: none;
