@@ -152,7 +152,7 @@
             </div>
             <div id="contact-last">
                 <textarea id="textarea" name="message" placeholder=" Enter Your Message" id="message"></textarea>
-                <input type="submit" id="submit" value="Send Message">
+                <input type="submit" id="submit" onclick="sendEmail()" value="Send Message">
             </div>
         </form>
         <div class="social">
@@ -177,19 +177,12 @@
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-        function sendEmail() {
-            Email.send({
-                SecureToken: "6f12b55f-eaee-4fd2-90ed-06c566332a0d",
-                To : "denisgorbatov7@mail.ru",
-                From : document.getElementById("email").value,
-                Subject : "New Contact Inquiry",
-                Body : "Name: " + document.getElementById("text-name").value
-                    + "<br> Email: " + document.getElementById("email").value
-                    + "<br> Phone: " + document.getElementById("tel").value
-                    + "<br> Message: " + document.getElementById("textarea").value
-            }).then(
-              message => alert("Thank You For Your Message")
-            );
+      function sendEmail() {
+            document.getElementById("email").value = '';
+            document.getElementById("text-name").value = '';
+            document.getElementById("email").value = '';
+            document.getElementById("tel").value = '';
+            document.getElementById("textarea").value = '';
         }
     </script>
 
