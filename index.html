@@ -140,7 +140,8 @@
     <section class="sixth-page" id="communication">
         <h3>Let's Collaborate</h3>
         <p>Please write me an email and I will get in touch with you as soon as possible!</p>
-        <form class="contact-boxes"  onsubmit="sendEmail(); reset(); return false;">
+        <form class="contact-boxes" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="72d582a5-f5e8-4d0e-9763-8b0c9e662997">
             <div class="contact-fr">
                 <input type="text" placeholder=" Full Name" id="text-name" autocomplete="on">
                 <input type="tel" placeholder=" Phone Number" id="tel" autocomplete="on">
