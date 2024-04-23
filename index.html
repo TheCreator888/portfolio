@@ -143,15 +143,15 @@
         <form class="contact-boxes" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="72d582a5-f5e8-4d0e-9763-8b0c9e662997">
             <div class="contact-fr">
-                <input type="text" placeholder=" Full Name" id="text-name" autocomplete="on">
-                <input type="tel" placeholder=" Phone Number" id="tel" autocomplete="on">
+                <input type="text" name="text" placeholder=" Full Name" id="text-name" autocomplete="on">
+                <input type="tel" name="tel" placeholder=" Phone Number" id="tel" autocomplete="on">
             </div>
             <div class="contact-fr">
-                <input type="email" placeholder=" Email Address" id="email" autocomplete="on">
-                <input type="text" placeholder=" Subject" id="text-subject" autocomplete="on">
+                <input type="email" name="email" placeholder=" Email Address" id="email" autocomplete="on">
+                <input type="text" name="title" placeholder=" Subject" id="text-subject" autocomplete="on">
             </div>
             <div id="contact-last">
-                <textarea id="textarea" placeholder=" Enter Your Message" id="message"></textarea>
+                <textarea id="textarea" name="message" placeholder=" Enter Your Message" id="message"></textarea>
                 <input type="submit" id="submit" value="Send Message">
             </div>
         </form>
