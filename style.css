@@ -494,7 +494,7 @@ input[type="email"]::placeholder {
 }
 #textarea {
   color: black;
-  width: 510px;
+  width: 505px;
   height: 150px;
   cursor: none;
   margin-bottom: 10px;
